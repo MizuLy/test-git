@@ -10,7 +10,7 @@ import { SiVuedotjs } from "react-icons/si";
 import { useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-export default function Ui({ name, title, status, image, bio, bgImg }) {
+export default function Profile({ name, title, status, image, bio, bgImg }) {
   const [mode, setMode] = useState(true);
   return (
     <div
@@ -21,8 +21,8 @@ export default function Ui({ name, title, status, image, bio, bgImg }) {
       <div
         className={`w-[300px] h-[370px] rounded-2xl overflow-hidden shadow-2xl duration-300 ${
           mode
-            ? "bg-slate-900 text-white shadow-2xl shadow-white"
-            : "bg-white text-slate-900 shadow-2xl"
+            ? "bg-slate-900 text-white shadow-2xl shadow-white border-8 "
+            : "bg-white text-slate-900 shadow-2xl border-8 border-slate-900"
         }`}
       >
         <div className="w-full h-[100px] flex justify-center relative">

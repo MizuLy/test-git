@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Ui from "./Ui";
+import Menu from "./Menu";
 
 export default function Darkmode() {
   const [mode, setMode] = useState(true);
@@ -24,7 +24,7 @@ export default function Darkmode() {
             mode ? "text-black" : "text-white"
           } animate-bounce duration-300`}
         >
-          <Ui name={"Mizu"} />
+          <Profile name={"Mizu"} />
         </div> */}
       </div>
     </div>
